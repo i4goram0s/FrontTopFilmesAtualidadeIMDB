@@ -1,6 +1,6 @@
 # Front-End listagem elencada pelo IMDB dos Filmes mais populares da atualidade
 
-Este projeto disponibiliza uma tela simples com a listagem dos filmes mais populares da atualidade, classificados pelo IMDB;
+Este projeto disponibiliza uma tela simples com a listagem dos filmes mais populares da atualidade, classificados pelo IMDB.
 
 Esta listagem é recuperada por meio do consumo da api do [IMDb](https://rapidapi.com/octopusteam-octopusteam-default/api/imdb236/playground/apiendpoint_ed134c5d-a3e2-42a3-b52b-f659563f0e70).
 
