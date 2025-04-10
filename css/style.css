@@ -1,0 +1,12 @@
+textarea#resenha {
+    width: 100%;
+    height: 300px;
+}
+
+.hidden{
+    display: none;
+}
+
+img.card-img-top {
+    cursor: pointer;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Filmes - Top 250</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome para ícones (opcional) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Os filmes mais populares da atualidade segundo o IMDb</h1>
+        <div class="row" id="movies-list">
+            <!-- Os filmes serão carregados aqui -->
+        </div>
+    </div>
+
+  <!-- Definição do modal responsável pela visualização e edição das resenhas cadastradas pelo usuário. -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <textarea name="resenha" id="resenha" placeholder="Nenhum resenha encontrada para este filme."></textarea>
+            <input type="hidden" name="idFilme" id="idFilme">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary cadastrar ">Salvar</button>
+            <button type="button" class="btn btn-primary atualizar hidden">Salvar</button>
+            <button type="button" class="btn btn-danger excluir hidden">Excluir Resenha</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script para jQuery e Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Script para carregar filmes e fazer a chamada API -->
+    <script type="text/javascript" src="scripts/scriptConsumoAPIExternaIMDB.js"></script>
+    <script type="text/javascript" src="scripts/scriptsConsumoMinhaAPI.js"></script>
+</body>
+</html>
